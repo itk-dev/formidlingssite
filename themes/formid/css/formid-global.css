@@ -1,0 +1,53 @@
+/*--- General stuff ---*/
+
+.no-spacing {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.small-spacing {
+  margin: .5em;
+}
+
+.medium-spacing {
+  margin: 1em;
+}
+
+.large-spacing {
+  margin: 1.5em;
+}
+
+.medium-h-spacing {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.large-h-spacing {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+.large-v-spacing {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.bottom-spacing {
+  margin-bottom: 1.5em;
+}
+
+/*--- Zone user ---*/
+
+.zone-user-wrapper {
+  background-color: #f1f1f1;
+}
+
+.zone-user {
+  text-align: right;
+}
+
+.zone-user .user-menu {
+  float: right;
+}

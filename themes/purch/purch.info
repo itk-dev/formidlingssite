@@ -1,0 +1,10 @@
+name = purch
+description = Theme for Purchases
+package = Core
+version = VERSION
+core = 7.x
+base theme = bartik
+
+stylesheets[all][] = styles/purch.css
+scripts[] = scripts/scripts.js
+
