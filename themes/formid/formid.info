@@ -12,7 +12,7 @@ screenshot = screenshot.png
 base theme = omega
 
 ;
-;scripts[] = scripts/script.js
+scripts[] = scripts/scripts.js
 
 ; REQUIRED CORE REGIONS
 
