@@ -32,12 +32,12 @@ function material_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['grouping'] = 'field_category';
-  $handler->display->display_options['style_options']['row_class'] = 'sglrowprioritet[field_prio]';
-  $handler->display->display_options['style_options']['class'] = 'sgllist';
-  $handler->display->display_options['style_options']['wrapper_class'] = 'sglwrapper';
+  $handler->display->display_options['style_options']['row_class'] = 'prioritet[field_prio]';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'field_date' => 'field_date',
+    'field_keyno' => 'field_keyno',
     'title' => 'title',
     'field_author' => 'field_author',
     'field_dk5' => 'field_dk5',
@@ -202,7 +202,6 @@ function material_views_default_views() {
   $handler->display->display_options['fields']['field_keyno']['table'] = 'field_data_field_keyno';
   $handler->display->display_options['fields']['field_keyno']['field'] = 'field_keyno';
   $handler->display->display_options['fields']['field_keyno']['label'] = '';
-  $handler->display->display_options['fields']['field_keyno']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_keyno']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_keyno']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_keyno']['alter']['absolute'] = 0;
@@ -295,7 +294,7 @@ function material_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="# " onclick="return Vislink(\'[field_keyno]\', \'[field_list]\')">Netpunkt</a>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a class="netpunkt" href="#" rel="[field_keyno]-[field_list]">Læs</a>';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
@@ -361,40 +360,6 @@ function material_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'material';
-
-  /* Display: Material vo */
-  $handler = $view->new_display('block', 'Material vo', 'block_1');
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Dep (field_dep) */
-  $handler->display->display_options['filters']['field_dep_value']['id'] = 'field_dep_value';
-  $handler->display->display_options['filters']['field_dep_value']['table'] = 'field_data_field_dep';
-  $handler->display->display_options['filters']['field_dep_value']['field'] = 'field_dep_value';
-  $handler->display->display_options['filters']['field_dep_value']['value'] = array(
-    'vo' => 'vo',
-  );
-  /* Filter criterion: Content: Date (field_date) */
-  $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
-  $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['value']['value'] = '2011-11-21';
-  $handler->display->display_options['filters']['field_date_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_date_value']['expose']['operator_id'] = 'field_date_value_op';
-  $handler->display->display_options['filters']['field_date_value']['expose']['label'] = 'Date';
-  $handler->display->display_options['filters']['field_date_value']['expose']['use_operator'] = 1;
-  $handler->display->display_options['filters']['field_date_value']['expose']['operator'] = 'field_date_value_op';
-  $handler->display->display_options['filters']['field_date_value']['expose']['identifier'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['expose']['multiple'] = FALSE;
-
-  /* Display: Material bø */
-  $handler = $view->new_display('block', 'Material bø', 'block_2');
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Dep (field_dep) */
-  $handler->display->display_options['filters']['field_dep_value']['id'] = 'field_dep_value';
-  $handler->display->display_options['filters']['field_dep_value']['table'] = 'field_data_field_dep';
-  $handler->display->display_options['filters']['field_dep_value']['field'] = 'field_dep_value';
-  $handler->display->display_options['filters']['field_dep_value']['value'] = array(
-    'bø' => 'bø',
-  );
   $export['material'] = $view;
 
   return $export;
