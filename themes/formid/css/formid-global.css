@@ -58,7 +58,7 @@
 
 .zone-branding-wrapper {
   background: url('../gfx/branding-bg.png') repeat-x;
-  padding: 78px 0;
+  padding: 38px 0;
   text-align: center;
 }
 
@@ -81,29 +81,18 @@
   text-decoration: none;
 }
 
-/* Main menu */
+/*--- Site slogan ---*/
 
-.zone-menu-wrapper {
-  background-color: #333;
-}
-
-#main-menu a,
-#main-menu a:link,
-#main-menu a:visited,
-#main-menu a:hover,
-#main-menu a:active {
+.site-slogan {
   color: #fff;
-  -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  line-height: 100%;
 }
 
-#main-menu.pills a {
-  background-color: #000;  
-}
+/*--- Material view ---*/
 
-#main-menu.pills a:hover {
-  background-color: #222;
-}
 
+.view-material {
+  font-size: 24px;
+  line-height: 30px;
+}
 
