@@ -98,10 +98,6 @@
 
 /*--- Zone content ---*/
 
-.zone-content-wrapper {
-  padding: 30px 0;
-}
-
 .zone-content-wrapper .content {
   padding: 20px 0;
 }
@@ -117,7 +113,7 @@
 .view-material .view-content {
   margin: auto;
   text-align: left;
-  width: 75%;
+  width: 750px;
 }
 
 .view-material .view-content h3 {
@@ -147,12 +143,19 @@
 
 .views-exposed-form .views-exposed-widgets {
   margin: auto;
-  width: 75%;
+  width: 750px;
 }
 
 .views-exposed-form .views-exposed-widget {
   float: left;
   padding: 0;
+}
+
+.views-exposed-form label {
+  color: #666;
+  float: none;
+  text-align: center;
+  width: 100%;
 }
 
 .views-exposed-form .views-exposed-widget #edit-field-date-value-min-wrapper,
@@ -163,13 +166,11 @@
 
 .views-exposed-form .views-exposed-widget input,
 .views-exposed-form .views-exposed-widget select {
+  color: #333;
   font-size: 100%;
+  max-width: 200px;
   min-height: 43px;
-}
-
-.views-exposed-form label {
-  float: none;
-  text-align: left;
+  text-align: center;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
