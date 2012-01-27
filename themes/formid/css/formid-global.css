@@ -57,8 +57,7 @@
 /*--- Zone branding ---*/
 
 .zone-branding-wrapper {
-  background: url('../gfx/branding-bg.png') repeat-x;
-  padding: 38px 0;
+  background: url('../gfx/branding-bg.png') repeat-x 0 -32px;
   text-align: center;
 }
 
@@ -105,7 +104,7 @@
 /*--- Material view ---*/
 
 .view-material {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 30px;
   text-align: center;
 }
@@ -120,6 +119,9 @@
   background: #e1e1e1;
   border-bottom: 1px solid #cdcdcd;
   padding: 0 0 0 20px;
+  -webkit-text-shadow: 0 1px 0 rgba(255,255,255,.25);
+  -moz-text-shadow: 0 1px 0 rgba(255,255,255,.25);
+  text-shadow: 0 1px 0 rgba(255,255,255,.25);
 }
 
 .view-material .view-content ul {
@@ -130,10 +132,15 @@
 }
 
 .view-material .view-content ul li {
-  line-height: 110%;
-  margin: 0 0 0 20px;
+  color: #333;
+  margin: 5px 0 5px 20px;
 }
 
+.view-material .view-content ul li span {
+  -webkit-text-shadow: 0 1px 0 rgba(255,255,255,1);
+  -moz-text-shadow: 0 1px 0 rgba(255,255,255,1);
+  text-shadow: 0 1px 1px rgba(255,255,255,1);
+}
 
 .view-material .container-inline-date .description {
   display: none;
@@ -167,7 +174,7 @@
 .views-exposed-form .views-exposed-widget input,
 .views-exposed-form .views-exposed-widget select {
   color: #333;
-  font-size: 100%;
+  font-size: 24px;
   max-width: 200px;
   min-height: 43px;
   text-align: center;
