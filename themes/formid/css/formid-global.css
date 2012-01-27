@@ -111,17 +111,39 @@
 .view-material {
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
 }
+
+.view-material .view-content {
+  margin: auto;
+  text-align: left;
+  width: 75%;
+}
+
+.view-material .view-content h3 {
+  background: #e1e1e1;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 0 0 0 20px;
+}
+
+.view-material .view-content ul {
+  background-color: #f1f1f1;
+  border-top: 1px solid #fff;
+  margin: 0 0 20px;
+  padding: 20px;
+}
+
+.view-material .view-content ul li {
+  line-height: 110%;
+  margin: 0 0 0 20px;
+}
+
 
 .view-material .container-inline-date .description {
   display: none;
 }
 
 /*--- Override exposed views ---*/
-
-.views-exposed-form {
-  text-align: center;
-}
 
 .views-exposed-form .views-exposed-widgets {
   margin: auto;
