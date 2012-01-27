@@ -64,12 +64,16 @@
 
 /*--- Site name ---*/
 
+.site-name {
+  margin: 0;
+}
+
 .site-name a {
   color: #fff;
   font-size: 50px;
-  -webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  -moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
-  text-shadow: 0 1px 1px rgba(0,0,0,.5);
+  -webkit-text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  -moz-text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
   text-transform: uppercase;
 }
 
@@ -86,13 +90,66 @@
 .site-slogan {
   color: #fff;
   line-height: 100%;
+  -webkit-text-shadow: 0 1px 0 rgba(0,0,0,.25);
+  -moz-text-shadow: 0 1px 0 rgba(0,0,0,.25);
+  text-shadow: 0 1px 0 rgba(0,0,0,.25);
+  text-transform: uppercase;
+}
+
+/*--- Zone content ---*/
+
+.zone-content-wrapper {
+  padding: 30px 0;
+}
+
+.zone-content-wrapper .content {
+  padding: 20px 0;
 }
 
 /*--- Material view ---*/
-
 
 .view-material {
   font-size: 24px;
   line-height: 30px;
 }
 
+.view-material .container-inline-date .description {
+  display: none;
+}
+
+/*--- Override exposed views ---*/
+
+.views-exposed-form {
+  text-align: center;
+}
+
+.views-exposed-form .views-exposed-widgets {
+  margin: auto;
+  width: 75%;
+}
+
+.views-exposed-form .views-exposed-widget {
+  float: left;
+  padding: 0;
+}
+
+.views-exposed-form .views-exposed-widget #edit-field-date-value-min-wrapper,
+.views-exposed-form .views-exposed-widget #edit-field-date-value-max-wrapper,
+.views-exposed-form #edit-field-dep-value-wrapper {
+  float: left;
+}
+
+.views-exposed-form .views-exposed-widget input,
+.views-exposed-form .views-exposed-widget select {
+  font-size: 100%;
+  min-height: 43px;
+}
+
+.views-exposed-form label {
+  float: none;
+  text-align: left;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin: 23px 0 0 20px;
+}
