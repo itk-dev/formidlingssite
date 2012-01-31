@@ -32,7 +32,8 @@ function material_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['grouping'] = 'field_category';
-  $handler->display->display_options['style_options']['row_class'] = 'prioritet[field_prio]';
+  $handler->display->display_options['style_options']['group_rendered'] = 1;
+  $handler->display->display_options['style_options']['row_class'] = 'priority[field_prio]';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
@@ -341,7 +342,7 @@ function material_views_default_views() {
   $handler->display->display_options['filters']['field_date_value']['expose']['operator_id'] = 'field_date_value_op';
   $handler->display->display_options['filters']['field_date_value']['expose']['label'] = 'Date';
   $handler->display->display_options['filters']['field_date_value']['expose']['operator'] = 'field_date_value_op';
-  $handler->display->display_options['filters']['field_date_value']['expose']['identifier'] = 'field_date_value';
+  $handler->display->display_options['filters']['field_date_value']['expose']['identifier'] = 'date';
   $handler->display->display_options['filters']['field_date_value']['expose']['multiple'] = FALSE;
   $handler->display->display_options['filters']['field_date_value']['form_type'] = 'date_popup';
   $handler->display->display_options['filters']['field_date_value']['default_date'] = '-2 week';
@@ -355,8 +356,22 @@ function material_views_default_views() {
   $handler->display->display_options['filters']['field_dep_value']['expose']['operator_id'] = 'field_dep_value_op';
   $handler->display->display_options['filters']['field_dep_value']['expose']['label'] = 'Afd';
   $handler->display->display_options['filters']['field_dep_value']['expose']['operator'] = 'field_dep_value_op';
-  $handler->display->display_options['filters']['field_dep_value']['expose']['identifier'] = 'field_dep_value';
+  $handler->display->display_options['filters']['field_dep_value']['expose']['identifier'] = 'dep';
   $handler->display->display_options['filters']['field_dep_value']['expose']['reduce'] = 0;
+  /* Filter criterion: Content: Prio (field_prio) */
+  $handler->display->display_options['filters']['field_prio_value']['id'] = 'field_prio_value';
+  $handler->display->display_options['filters']['field_prio_value']['table'] = 'field_data_field_prio';
+  $handler->display->display_options['filters']['field_prio_value']['field'] = 'field_prio_value';
+  $handler->display->display_options['filters']['field_prio_value']['value'] = array(
+    1 => '1',
+  );
+  $handler->display->display_options['filters']['field_prio_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_prio_value']['expose']['operator_id'] = 'field_prio_value_op';
+  $handler->display->display_options['filters']['field_prio_value']['expose']['label'] = 'Priority';
+  $handler->display->display_options['filters']['field_prio_value']['expose']['operator'] = 'field_prio_value_op';
+  $handler->display->display_options['filters']['field_prio_value']['expose']['identifier'] = 'prio';
+  $handler->display->display_options['filters']['field_prio_value']['expose']['remember'] = 1;
+  $handler->display->display_options['filters']['field_prio_value']['expose']['reduce'] = 0;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
