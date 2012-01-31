@@ -33,7 +33,7 @@ function material_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['grouping'] = 'field_category';
   $handler->display->display_options['style_options']['group_rendered'] = 1;
-  $handler->display->display_options['style_options']['row_class'] = 'priority[field_prio]';
+  $handler->display->display_options['style_options']['row_class'] = 'priority-[field_prio]';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
@@ -75,7 +75,6 @@ function material_views_default_views() {
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
-    'show_repeat_rule' => 'show',
   );
   $handler->display->display_options['fields']['field_date']['field_api_classes'] = 0;
   /* Field: Content: Dep */
@@ -340,7 +339,6 @@ function material_views_default_views() {
   $handler->display->display_options['filters']['field_date_value']['value']['value'] = '2011-12-15';
   $handler->display->display_options['filters']['field_date_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_date_value']['expose']['operator_id'] = 'field_date_value_op';
-  $handler->display->display_options['filters']['field_date_value']['expose']['label'] = 'Date';
   $handler->display->display_options['filters']['field_date_value']['expose']['operator'] = 'field_date_value_op';
   $handler->display->display_options['filters']['field_date_value']['expose']['identifier'] = 'date';
   $handler->display->display_options['filters']['field_date_value']['expose']['multiple'] = FALSE;
