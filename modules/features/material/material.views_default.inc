@@ -321,7 +321,7 @@ function material_views_default_views() {
   $handler->display->display_options['filters']['field_date_value']['expose']['multiple'] = FALSE;
   $handler->display->display_options['filters']['field_date_value']['form_type'] = 'date_popup';
   $handler->display->display_options['filters']['field_date_value']['default_date'] = '-2 week';
-  $handler->display->display_options['filters']['field_date_value']['default_to_date'] = '-1 week';
+  $handler->display->display_options['filters']['field_date_value']['default_to_date'] = 'now';
   $handler->display->display_options['filters']['field_date_value']['year_range'] = '-1:+1';
   /* Filter criterion: Content: Dep (field_dep) */
   $handler->display->display_options['filters']['field_dep_value']['id'] = 'field_dep_value';
@@ -337,15 +337,11 @@ function material_views_default_views() {
   $handler->display->display_options['filters']['field_prio_value']['id'] = 'field_prio_value';
   $handler->display->display_options['filters']['field_prio_value']['table'] = 'field_data_field_prio';
   $handler->display->display_options['filters']['field_prio_value']['field'] = 'field_prio_value';
-  $handler->display->display_options['filters']['field_prio_value']['value'] = array(
-    1 => '1',
-  );
   $handler->display->display_options['filters']['field_prio_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_prio_value']['expose']['operator_id'] = 'field_prio_value_op';
   $handler->display->display_options['filters']['field_prio_value']['expose']['label'] = 'Priority';
   $handler->display->display_options['filters']['field_prio_value']['expose']['operator'] = 'field_prio_value_op';
   $handler->display->display_options['filters']['field_prio_value']['expose']['identifier'] = 'prio';
-  $handler->display->display_options['filters']['field_prio_value']['expose']['remember'] = 1;
   $handler->display->display_options['filters']['field_prio_value']['expose']['reduce'] = 0;
 
   /* Display: Page */
