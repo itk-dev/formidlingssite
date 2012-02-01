@@ -25,9 +25,13 @@
         }
         return false;
       }
-    )
+    );
+    
+    $('.category-section').each( function(index){ var prio = $('.priority-0', this).hide(); $('ul', this).append('<li class="x">Vis alle (' + prio.length + ')</li>') });
+    $('.x').click( function() { $('.priority-0', $(this).parent()).show();$(this).hide() });
+    
+    
   });
 
 })(jQuery);
-
 
