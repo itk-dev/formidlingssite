@@ -137,6 +137,10 @@
   padding: 20px;
 }
 
+.view-material .view-content ul .priority-0 {
+  color: #666;
+}
+
 .view-material .view-content ul li {
   color: #333;
   margin: 5px 0 5px 20px;
