@@ -22,7 +22,6 @@ function material_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Material';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -314,35 +313,33 @@ function material_views_default_views() {
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['operator'] = 'between';
   $handler->display->display_options['filters']['field_date_value']['value']['value'] = '2011-12-15';
+  $handler->display->display_options['filters']['field_date_value']['group'] = 0;
   $handler->display->display_options['filters']['field_date_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_date_value']['expose']['operator_id'] = 'field_date_value_op';
   $handler->display->display_options['filters']['field_date_value']['expose']['operator'] = 'field_date_value_op';
   $handler->display->display_options['filters']['field_date_value']['expose']['identifier'] = 'date';
   $handler->display->display_options['filters']['field_date_value']['expose']['multiple'] = FALSE;
   $handler->display->display_options['filters']['field_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_date_value']['default_date'] = '-2 week';
+  $handler->display->display_options['filters']['field_date_value']['default_date'] = '-1 month';
   $handler->display->display_options['filters']['field_date_value']['default_to_date'] = 'now';
   $handler->display->display_options['filters']['field_date_value']['year_range'] = '-1:+1';
   /* Filter criterion: Content: Dep (field_dep) */
   $handler->display->display_options['filters']['field_dep_value']['id'] = 'field_dep_value';
   $handler->display->display_options['filters']['field_dep_value']['table'] = 'field_data_field_dep';
   $handler->display->display_options['filters']['field_dep_value']['field'] = 'field_dep_value';
+  $handler->display->display_options['filters']['field_dep_value']['group'] = 0;
   $handler->display->display_options['filters']['field_dep_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_dep_value']['expose']['operator_id'] = 'field_dep_value_op';
   $handler->display->display_options['filters']['field_dep_value']['expose']['label'] = 'Afd';
   $handler->display->display_options['filters']['field_dep_value']['expose']['operator'] = 'field_dep_value_op';
   $handler->display->display_options['filters']['field_dep_value']['expose']['identifier'] = 'dep';
   $handler->display->display_options['filters']['field_dep_value']['expose']['reduce'] = 0;
-  /* Filter criterion: Content: Prio (field_prio) */
-  $handler->display->display_options['filters']['field_prio_value']['id'] = 'field_prio_value';
-  $handler->display->display_options['filters']['field_prio_value']['table'] = 'field_data_field_prio';
-  $handler->display->display_options['filters']['field_prio_value']['field'] = 'field_prio_value';
-  $handler->display->display_options['filters']['field_prio_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_prio_value']['expose']['operator_id'] = 'field_prio_value_op';
-  $handler->display->display_options['filters']['field_prio_value']['expose']['label'] = 'Priority';
-  $handler->display->display_options['filters']['field_prio_value']['expose']['operator'] = 'field_prio_value_op';
-  $handler->display->display_options['filters']['field_prio_value']['expose']['identifier'] = 'prio';
-  $handler->display->display_options['filters']['field_prio_value']['expose']['reduce'] = 0;
+  /* Filter criterion: Content: Category (field_category) */
+  $handler->display->display_options['filters']['field_category_value']['id'] = 'field_category_value';
+  $handler->display->display_options['filters']['field_category_value']['table'] = 'field_data_field_category';
+  $handler->display->display_options['filters']['field_category_value']['field'] = 'field_category_value';
+  $handler->display->display_options['filters']['field_category_value']['operator'] = '!=';
+  $handler->display->display_options['filters']['field_category_value']['value'] = '-';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
