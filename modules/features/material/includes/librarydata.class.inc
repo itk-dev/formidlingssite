@@ -30,6 +30,7 @@ class LibrarydataParser extends FeedsParser {
       $item['keyno'] = (string)$record->keyno;
       $item['prio'] = ( (string)$record->prio == '1' ) ? 1 : 0;//boolean
       $item['dk5'] = (string)$record->dk5;
+      $item['opcode'] = (string)$record->opcode;
       $item['dep'] = (string)$record->dep; // list text
       $item['title'] = (string)$record->title;
       $item['author'] = (string)$record->author;

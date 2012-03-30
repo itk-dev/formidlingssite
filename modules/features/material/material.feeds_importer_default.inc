@@ -96,6 +96,11 @@ function material_feeds_importer_default() {
             'target' => 'created',
             'unique' => FALSE,
           ),
+          12 => array(
+            'source' => 'opcode',
+            'target' => 'field_opcode',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '1',
         'input_format' => 'plain_text',
