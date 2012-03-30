@@ -225,6 +225,7 @@ function material_views_default_views() {
   $handler->display->display_options['fields']['field_keyno']['table'] = 'field_data_field_keyno';
   $handler->display->display_options['fields']['field_keyno']['field'] = 'field_keyno';
   $handler->display->display_options['fields']['field_keyno']['label'] = '';
+  $handler->display->display_options['fields']['field_keyno']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_keyno']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['field_keyno']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['field_keyno']['alter']['absolute'] = 0;
@@ -274,7 +275,7 @@ function material_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a class="netpunkt" href="#" rel="[field_keyno]-[field_list]">Læs</a> <a class="fullpost" href="http://www.aakb.dk/ting/objec/775100%3a[field_keyno]">Fuld post</a>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a class="fullpost" href="http://www.aakb.dk/ting/object/775100%3A[field_keyno]" target="aakb">[field_keyno]</a> - <a class="netpunkt" href="#" rel="[field_keyno]-[field_list]">Læs</a>';
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['nothing']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['nothing']['alter']['external'] = 0;
@@ -306,11 +307,6 @@ function material_views_default_views() {
   $handler->display->display_options['sorts']['field_dep_value']['table'] = 'field_data_field_dep';
   $handler->display->display_options['sorts']['field_dep_value']['field'] = 'field_dep_value';
   $handler->display->display_options['sorts']['field_dep_value']['order'] = 'DESC';
-  /* Sort criterion: Content: Date (field_date) */
-  $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
-  $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
-  $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
-  $handler->display->display_options['sorts']['field_date_value']['order'] = 'DESC';
   /* Sort criterion: Content: opcode (field_opcode) */
   $handler->display->display_options['sorts']['field_opcode_value']['id'] = 'field_opcode_value';
   $handler->display->display_options['sorts']['field_opcode_value']['table'] = 'field_data_field_opcode';
@@ -319,6 +315,10 @@ function material_views_default_views() {
   $handler->display->display_options['sorts']['field_author_value']['id'] = 'field_author_value';
   $handler->display->display_options['sorts']['field_author_value']['table'] = 'field_data_field_author';
   $handler->display->display_options['sorts']['field_author_value']['field'] = 'field_author_value';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Filter criterion: Content: Date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
