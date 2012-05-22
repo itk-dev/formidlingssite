@@ -57,7 +57,7 @@
 /*--- Zone branding ---*/
 
 .zone-branding-wrapper {
-  background: url('../gfx/branding-bg.png') repeat-x 0 -32px;
+  /*background: url('../gfx/branding-bg.png') repeat-x 0 -32px;*/
   text-align: center;
 }
 
@@ -202,4 +202,27 @@
   margin: 23px 0 0 20px;
   min-height: 53px;
   padding: 4px 20px;
+}
+
+/* Flexi background (fix for IE8) */
+img#expando {
+display: none;
+position: absolute;
+z-index: 1;
+-ms-interpolation-mode: bicubic;
+}
+ 
+.wide img#expando,
+.tall img#expando {
+display: block;
+}
+ 
+.wide img#expando {
+height: auto;
+width: 100%;
+}
+ 
+.tall img#expando {
+height: 100%;
+width: auto;
 }

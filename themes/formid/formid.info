@@ -13,6 +13,7 @@ base theme = omega
 
 ;
 scripts[] = scripts/scripts.js
+scripts[] = scripts/flexi-background.js
 
 ; REQUIRED CORE REGIONS
 
