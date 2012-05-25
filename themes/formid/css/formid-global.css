@@ -54,6 +54,12 @@
   float: right;
 }
 
+/*--- Zone header ---*/
+.section-header {
+  position: fixed;
+  min-height: 100px;
+}
+
 /*--- Zone branding ---*/
 
 .region-branding-inner {
@@ -134,6 +140,7 @@
 }
 
 .view-material .views-table .x:hover {
+  background-color: #fff;
   text-decoration: underline;
 }
 
