@@ -54,12 +54,6 @@
   float: right;
 }
 
-/*--- Zone header ---*/
-.section-header {
-  position: fixed;
-  min-height: 100px;
-}
-
 /*--- Zone branding ---*/
 
 .region-branding-inner {
