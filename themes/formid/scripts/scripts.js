@@ -26,11 +26,13 @@
         return false;
       }
     );
-    
-    $('.category-section').each( function(index){ 
+      
+     
+    $('.views-table').each( function(index){ 
 	var prio = $('.priority-0', this).hide(); 
-	$('ul', this).append('<li class="x">Vis/skjul (' + prio.length + ')</li>') 
+	$('tbody', this).append('<tr class="x"><td colspan="20">Vis/skjul (' + prio.length + ')</td></tr>') 
     });
+    
     $('.x').click( function() { $('.priority-0', $(this).parent()).toggle(); });
     
     
