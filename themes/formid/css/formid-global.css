@@ -41,9 +41,8 @@
 }
 
 .block-helptext {
-  background-color: #FFFFFF;
-  background-color: rgb(255,255,255);
-  background-color: rgba(200, 200, 200, .7);
+  background: #ffffff;
+  background: rgba(200, 200, 200, .7);
   border-radius: 20px;
   color: Black;
   padding: 10px 15px 0 15px;
@@ -74,6 +73,7 @@
 /*--- Zone Header ---*/
 .section-header {
   background-image: url(../images/formid-top.png);
+  min-height: 160px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -82,9 +82,7 @@
 /*--- Zone branding ---*/
 
 .region-branding-inner {
-  
   margin: 0 auto;
-  min-height: 100px;
 }
 
 .logo-img {
@@ -114,7 +112,7 @@
   position: absolute;
   right: 0;
   text-align: center;
-  top: 120px;  
+  top: 160px;  
 }
 
 .views-widget-filter-field_date_value>label {
