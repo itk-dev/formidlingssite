@@ -102,7 +102,7 @@
 .zone-content-wrapper {
   background-attachment: fixed;
   background-image: url(../images/formid-bg.png);
-  background-position: top center;
+  background-position: center 160px;
   background-repeat: no-repeat;
   bottom: 0;
   left: 0;
