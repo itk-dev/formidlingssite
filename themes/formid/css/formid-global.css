@@ -41,8 +41,8 @@
 }
 
 .block-helptext {
+  background-color: rgb(255,255,255);
   background-color: rgba(200, 200, 200, .7);
-  background-color:rgb(255,255,255);
   border-radius: 20px;
   color: Black;
   padding: 10px 15px 0 15px;
@@ -84,7 +84,6 @@
   
   margin: 0 auto;
   min-height: 100px;
-  width: 1000px;
 }
 
 .logo-img {
@@ -94,7 +93,7 @@
 
 .region-branding-inner .block-helptext {
   position: absolute;
-  right: 90px;
+  right: 0;
   top: 30px;
   width: 500px;
 }
@@ -109,7 +108,7 @@
   bottom: 0;
   left: 0;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
   padding: 20px 0;
   position: absolute;
   right: 0;
@@ -123,9 +122,9 @@
 
 .region-content-inner .block-helptext {
   position: absolute;
-  top: -10px;
-  right: 90px;
-  width: 320px;
+  top: 0;
+  right: 0;
+  width: 500px;
 }
 
 
@@ -178,7 +177,6 @@
 
 .region-content-inner {
   margin: auto;
-  width: 1000px;
 }
 
 .views-exposed-form .views-exposed-widget {
