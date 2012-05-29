@@ -40,6 +40,22 @@
   margin-bottom: 1.5em;
 }
 
+.block-helptext {
+  background-color:rgb(255,255,255);
+  background-color: rgba(200, 200, 200, .7);
+  border-radius: 20px;
+  color: Black;
+  padding: 10px 15px 0 15px;
+}
+
+.block-helptext h2 {
+  display: none;
+}
+
+.block-helptext p{
+  font-style: italic;
+  color: #444;
+}
 /*--- Zone user ---*/
 
 .zone-user-wrapper {
@@ -54,9 +70,18 @@
   float: right;
 }
 
+/*--- Zone Header ---*/
+.section-header {
+  background-image: url(../images/formid-top.png);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 /*--- Zone branding ---*/
 
 .region-branding-inner {
+  
   margin: 0 auto;
   min-height: 100px;
   width: 1000px;
@@ -67,31 +92,39 @@
   width: 1000px;
 }
 
-.block-slogan {
-  background-color:rgb(255,255,255);
-  background-color: rgba(200, 200, 200, .7);
-  border-radius: 5px;
-  color: Black;
-  padding: 5px 10px 0 10px;
+.region-branding-inner .block-helptext {
   position: absolute;
   right: 90px;
   top: 30px;
   width: 500px;
 }
 
-.block-slogan h2 {
-  display: none;
-}
-
 /*--- Zone content ---*/
 
 .zone-content-wrapper {
+  background-attachment: fixed;
+  background-image: url(../images/formid-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
   padding: 20px 0;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 120px;  
 }
 
 .views-widget-filter-field_date_value>label {
   display: none;
+}
+
+.region-content-inner .block-helptext {
+  position: absolute;
+  top: -10px;
+  right: 90px;
+  width: 320px;
 }
 
 

@@ -182,8 +182,7 @@ textarea {
  * ------------------------------------------------------------------------------------------- */
 body {
   background-attachment: fixed;
-  background-color: #333;
-  background-image: url(../images/formid-bg.jpg);
+  background-color: White;  
   background-position: top center;
   background-repeat: no-repeat;
 

@@ -18,7 +18,7 @@
  * Add class 'page-slogan' to block in branding zone
  */
 function formid_preprocess_block(&$vars) {
-  if(isset($vars['elements']['#block']->module) && $vars['elements']['#block']->title == 'slogan-long-title') {
-    $vars['attributes_array']['class'][] = 'block-slogan';
+  if(isset($vars['elements']['#block']->module) && $vars['elements']['#block']->title == 'block-helptext') {
+    $vars['attributes_array']['class'][] = 'block-helptext';
   }
 }
