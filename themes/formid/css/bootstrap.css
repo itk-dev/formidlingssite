@@ -181,11 +181,6 @@ textarea {
  * Basic and global styles for generating a grid system, structural layout, and page templates
  * ------------------------------------------------------------------------------------------- */
 body {
-  background-attachment: fixed;
-  background-color: White;  
-  background-position: top center;
-  background-repeat: no-repeat;
-
   margin:0;
   padding: 0;
 

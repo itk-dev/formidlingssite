@@ -104,6 +104,7 @@
   background-image: url(../images/formid-bg.png);
   background-position: center 160px;
   background-repeat: no-repeat;
+  background-size: cover;
   bottom: 0;
   left: 0;
   overflow-x: hidden;
@@ -118,13 +119,6 @@
 .views-widget-filter-field_date_value>label {
   display: none;
 }
-/*
-.region-content-inner .block-helptext {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 500px;
-}*/
 
 
 /*--- Material view ---*/
