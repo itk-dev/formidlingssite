@@ -85,9 +85,23 @@
   margin: 0 auto;
 }
 
+.region-branding-inner p a {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  color: #CCC;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.region-branding-inner p a:hover {
+  text-decoration: underline;
+}
+
 .logo-img {
   margin: 30px auto;
-  width: 1000px;
+  /*width: 1000px;*/
 }
 
 .region-branding-inner .block-helptext {
